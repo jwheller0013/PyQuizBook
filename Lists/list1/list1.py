@@ -165,22 +165,28 @@ def remove_empty_strs(lst):
      Remove empty strings from the list of strings
      """
      pass
-
+     lst[:] = [x for x in lst if x]
+     return lst
 
 def remove_item_from(lst, aaa):
     """
     Remove all occurrences of a specific item from a list.
     """
     pass
+    lst = [i for i in lst if i != aaa]
+    return lst
 
 def leave_item_in(lst, aaa):
     """
     Leave all occurrences of a specific item in a list.
     """
     pass
+    lst = [i for i in lst if i == aaa]
+    return lst
 
 def length_of(lst):
     """
     return the length of the list
     """
     pass
+    return  len(lst)
