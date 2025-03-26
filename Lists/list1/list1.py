@@ -95,18 +95,30 @@ def list_from_range2(n, m):
     This function returns list with n..m (without m) as integers in a list
     """
     pass # implement me
+    lst = []
+    for i in range (n, m):
+        lst.append(i)
+    return lst
 
 def list_from_range3(n, m):
     """
     This function returns list with n..m (including m(!)) as integers in a list
     """
     pass # implement me
+    lst = []
+    for i in range (n, m+1):
+        lst.append(i)
+    return lst
 
 def list_from_range4(n, m):
     """
     This function returns list with n..m (WITHOUT n and including m) as integers in a list
     """
     pass # implement me
+    lst = []
+    for i in range (n+1, m+1):
+        lst.append(i)
+    return lst
 
 def list_from_range_by(n, step):
     """
@@ -114,6 +126,10 @@ def list_from_range_by(n, step):
     (read the test)
     """
     pass # implement me
+    lst = []
+    for i in range (0, n, step):
+        lst.append(i)
+    return lst
 
 def rev_list(lst):
     """
