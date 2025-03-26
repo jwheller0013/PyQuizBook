@@ -47,6 +47,8 @@ def add_item_end(lst, a):
     returning the list with the item appended to the list
     """
     pass  # implement me
+    lst.append(a)
+    return lst
 
 def add_list_to_list(lsta, lstb):
     """
@@ -54,18 +56,25 @@ def add_list_to_list(lsta, lstb):
     returning a list
     """
     pass  # implement me
+    lstc = lsta + lstb
+    return lstc
 
 def list_and_list_to_tuple(lsta, lstb):
     """
     This function takes two lists and returns a tuple containing the two lists
     """
     pass # implement me
+    tup = (lsta, lstb)
+    return tup
 
 def list_and_list_to_list(lsta, lstb):
     """
     This function takes two lists and returns a list containing the two lists
     """
     pass # implement me
+    tup = (lsta, lstb)
+    lstc = list(tup)
+    return lstc
 
 ##
 ##
@@ -76,6 +85,10 @@ def list_from_range(n):
     This function returns list with 0..n as integers in a list
     """
     pass # implement me
+    lst = []
+    for i in range(n):
+        lst.append(i)
+    return lst
 
 def list_from_range2(n, m):
     """
