@@ -8,12 +8,14 @@ def create_list_from_tuple(t):
     This function takes a tuple of elements and returns a list containing those elements of the tuple.
     """
     pass  # implement me
+    return list(t)
     
 def drop_last(lst):
     """
     This function takes a list and returns a list with the last item removed.
     """
     pass  # implement me
+    return lst[:-1]
 
 
 def drop_first_two(lst):
@@ -21,12 +23,14 @@ def drop_first_two(lst):
     This function takes a list and returns a list with the first two items removed.
     """
     pass  # implement me
+    return lst[2:]
 
 def drop_mangle(lst):
     """
     This function takes a list and returns a list with the first two items AND last item removed.
     """
     pass  # implement me
+    return lst[2:-1]
 
 def add_item_front(lst, a):
     """
@@ -34,6 +38,8 @@ def add_item_front(lst, a):
     returning the list with the item prepended to the list
     """
     pass  # implement me
+    lst.insert(0,a)
+    return lst
 
 def add_item_end(lst, a):
     """
