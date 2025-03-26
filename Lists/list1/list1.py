@@ -137,6 +137,7 @@ def rev_list(lst):
     (read the test)
     """
     pass # implement me
+    return lst[::-1]
   
 def concat_list_indexwise(lst1, lst2):
     """
@@ -147,12 +148,17 @@ def concat_list_indexwise(lst1, lst2):
     """
     parseString # implement me
 
+    return [lst1[i] + lst2[i] for i in range(len(lst1))]
+
 def square_each_item(lst):
     """
     This function returns list which each item in argument list has been squared
     (read the test)
     """
     pass # implement me
+    for i, v in enumerate(lst):
+        lst[i] = v ** 2
+    return lst
 
 def remove_empty_strs(lst):
      """
